@@ -1,0 +1,3 @@
+# Cloudflare Pages SPA fallback: serve the app for client-side routes
+# (e.g. /oauth/consent, the AI-assistant OAuth consent page).
+/*    /index.html   200

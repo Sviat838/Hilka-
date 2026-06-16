@@ -1,0 +1,65 @@
+[
+  {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "parent_id": null,
+    "title": "Create a startup in prediction markets",
+    "description": "Prediction markets are having a moment. Where is the wedge for a small team?",
+    "status": "todo",
+    "decline_reason": null,
+    "position": 1024
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000002",
+    "parent_id": "00000000-0000-4000-8000-000000000001",
+    "title": "Trading terminal + permissionless bet creation",
+    "description": "Axiom-style terminal for power traders, with pump.fun-style market creation for anyone.",
+    "status": "todo",
+    "decline_reason": null,
+    "position": 1024
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000003",
+    "parent_id": "00000000-0000-4000-8000-000000000001",
+    "title": "Telegram bot for simple bets",
+    "description": "Lightweight P2P bets between friends, settled in-chat.",
+    "status": "dropped",
+    "decline_reason": "Easy distribution but weak retention; bots get commoditized and cloned fast.",
+    "position": 2048
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000004",
+    "parent_id": "00000000-0000-4000-8000-000000000003",
+    "title": "White-label the bot for crypto communities",
+    "description": "Explored before the parent was dropped — stays visible, greyed, as part of the record.",
+    "status": "todo",
+    "decline_reason": null,
+    "position": 1024
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000005",
+    "parent_id": "00000000-0000-4000-8000-000000000001",
+    "title": "B2B prediction-market infra API",
+    "description": "Sell odds feeds, settlement and liquidity routing to apps that want embedded markets.",
+    "status": "todo",
+    "decline_reason": null,
+    "position": 3072
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000006",
+    "parent_id": "00000000-0000-4000-8000-000000000002",
+    "title": "MVP: terminal on top of existing venues",
+    "description": "Aggregate Polymarket/Kalshi liquidity first; own the trader UX before owning the venue.",
+    "status": "todo",
+    "decline_reason": null,
+    "position": 1024
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000007",
+    "parent_id": "00000000-0000-4000-8000-000000000002",
+    "title": "Build our own orderbook from day one",
+    "description": "",
+    "status": "dropped",
+    "decline_reason": "Liquidity bootstrap risk too high before we have order flow.",
+    "position": 2048
+  }
+]

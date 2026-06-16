@@ -1,0 +1,15 @@
+{
+  "name": "hilka",
+  "owner": "Sviat",
+  "metadata": {
+    "description": "Hilka — create thought chains in your decision journal from any AI assistant.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "hilka",
+      "source": "./plugin",
+      "description": "Create Hilka thought chains (trees of one-idea-per-card thoughts) in your own Hilka account, from Claude."
+    }
+  ]
+}

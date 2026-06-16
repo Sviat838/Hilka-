@@ -1,0 +1,13 @@
+{
+  "name": "hilka",
+  "version": "1.0.0",
+  "description": "Create Hilka thought chains (trees of one-idea-per-card thoughts) in your own Hilka decision journal, from Claude.",
+  "author": "Sviat",
+  "homepage": "https://github.com/Sviat838/Hilka-",
+  "mcpServers": {
+    "hilka": {
+      "type": "http",
+      "url": "https://hilka-mcp.sviatik2408.workers.dev/mcp"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hilka-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-06-01",
+  "observability": { "enabled": true },
+  // SUPABASE_URL is public (it's in the SPA too). The publishable key is also
+  // public, but it's not in git — set it as a secret: `wrangler secret put
+  // SUPABASE_PUBLISHABLE_KEY` (and put it in .dev.vars for `wrangler dev`).
+  "vars": {
+    "SUPABASE_URL": "https://htrvknxzunkqxcqsqxpm.supabase.co"
+  }
+}
