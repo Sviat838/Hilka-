@@ -8,12 +8,11 @@ A free, open-source decision-tree journal. Map a question as a tree of one-idea-
 thoughts — and the branches you reject stay forever, **with the reason you killed them.**
 Build it by hand, or let your AI assistant build it for you.
 
-[**Open the app →**](https://hilka.pages.dev) · [Two ways to use](#two-ways-to-use-hilka) · [How it works](#how-it-works) · [Run it yourself](#run-it-yourself) · [Contributing](#contributing)
+[**Open the app →**](https://hilka.pages.dev) · [Two ways to use](#two-ways-to-use-hilka) · [How it works](#how-it-works)
 
 [![Live demo](https://img.shields.io/badge/live%20demo-hilka.pages.dev-2ea44f?style=flat-square)](https://hilka.pages.dev)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/Sviat838/Hilka-?style=flat-square)](https://github.com/Sviat838/Hilka-/stargazers)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](#contributing)
 
 React 19 · TypeScript · Supabase · Cloudflare — *Hilka* (гілка) = branch.
 
@@ -31,7 +30,7 @@ rejected, which is usually where the real thinking lives. Months later you re-re
 - 🗺️ **Two views of one tree** — a pan/zoom **canvas** of cards on curved branches, or a linear **chain** feed.
 - 🚦 **A progress axis** — every thought is `todo · doing · done · dropped`.
 - 📱 **Phone & tablet ready** — touch drag, pinch-zoom, bottom-sheet editing.
-- 🎨 **Four themes** — paper, ink, warm, black.
+- 🎨 **Two themes** — Ink and Warm.
 - 💾 **Yours to keep** — one-click Markdown / JSON export, free, open source.
 
 ---
@@ -127,37 +126,8 @@ and two rules the app enforces hard:
   reason, so nothing is ever lost.
 
 Drag a card to reparent or reorder it; cycles and attaching to a dropped branch are blocked
-both in the UI and by a DB trigger. Four themes (paper, ink, warm, black). Works on phones
+both in the UI and by a DB trigger. Two themes (Ink and Warm). Works on phones
 and tablets (touch drag, pinch-zoom, bottom-sheet editing).
-
-## Run it yourself
-
-Hilka is open source — fork it, self-host it, or just read how it works.
-
-- **Frontend:** Vite + React + TypeScript + TanStack Query — a static SPA, plain CSS.
-- **Backend:** Supabase (Postgres + Auth + RLS + auto REST) — no server code. RLS scopes
-  every row to its owner, so the publishable key in the bundle is safe.
-- **MCP server:** a stateless Cloudflare Worker ([`worker/`](worker/)).
-- **Hosting:** Cloudflare Pages + Supabase free tier.
-
-```sh
-cp .env.example .env.local   # Supabase URL + publishable key (+ optional VITE_HILKA_MCP_URL)
-npm install
-npm run dev
-npm test                     # unit tests: forest assembly, layout, decision rules
-```
-
-Full architecture and product decisions are in [PLAN.md](PLAN.md). Back up any time with the
-in-app **Export Markdown / JSON** buttons.
-
-## Contributing
-
-Issues and PRs are welcome — bug reports, ideas, and rough edges all help.
-
-- Read [PLAN.md](PLAN.md) for the architecture and the product decisions (D1–D12) behind it.
-- Keep `npm test` and `npm run build` green; one logical change per PR.
-- Not sure where to start? Open an issue describing what you'd map first — real use cases
-  shape the roadmap.
 
 ## License
 
