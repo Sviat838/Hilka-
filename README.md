@@ -16,11 +16,9 @@ Build it by hand, or let your AI assistant build it for you.
 
 React 19 · TypeScript · Supabase · Cloudflare — *Hilka* (гілка) = branch.
 
-</div>
+<img src="docs/canvas.png" alt="A life decision mapped in Hilka — a tree of one-idea-per-card thoughts on a pan/zoom canvas, with a dropped branch that keeps the reason it was killed" width="820">
 
-<!-- TODO: hero GIF here — drag a card, drop a branch, write the kill-reason, show the dropped
-     branch staying on the canvas greyed-out with its reason. Keep it <8MB / <20s so GitHub
-     autoplays and loops. Store under docs/ and reference as ![Hilka](docs/hero.gif). -->
+</div>
 
 Most notes capture conclusions. Hilka captures the **reasoning** — including the branches you
 rejected, which is usually where the real thinking lives. Months later you re-read not just
@@ -128,6 +126,13 @@ and two rules the app enforces hard:
 Drag a card to reparent or reorder it; cycles and attaching to a dropped branch are blocked
 both in the UI and by a DB trigger. Two themes (Ink and Warm). Works on phones
 and tablets (touch drag, pinch-zoom, bottom-sheet editing).
+
+<table>
+<tr>
+<td width="50%" valign="top"><img src="docs/edit-thought.png" alt="Editing a thought in Hilka — title, an optional description, and a todo / doing / done / dropped status"></td>
+<td width="50%" valign="top"><img src="docs/drop-reason.png" alt="Dropping a branch makes you write why before it can be saved — the reason stays attached to the dead end"></td>
+</tr>
+</table>
 
 ## License
 
